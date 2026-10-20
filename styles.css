@@ -213,3 +213,26 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
   .embed { padding: 0; margin-bottom: 0; }
   .embed iframe { border-radius: 0; border-left: 0; border-right: 0; }
 }
+
+/* Service pages (/nanas, /empleadas-domesticas, /enfermeras-cuidadoras,
+   /choferes): one template, same verification list and footnotes as the
+   landing page. */
+.crumbs { font-size: 14px; color: var(--muted); margin-bottom: 12px; }
+.crumbs a { color: var(--muted); }
+.tasks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 28px; list-style: none; padding: 0; margin: 0; max-width: 760px; }
+.tasks li { display: flex; gap: 12px; align-items: flex-start; }
+.tasks .check-dot { width: 24px; height: 24px; }
+.tiles.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.tile small { display: block; font-weight: 400; color: var(--muted); font-size: 14px; }
+.faq { display: grid; gap: 10px; max-width: 760px; }
+.faq details { border: 1px solid var(--border); border-radius: 16px; background: var(--surface); padding: 14px 18px; }
+.faq summary { font-weight: 700; cursor: pointer; }
+.faq summary:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; border-radius: 6px; }
+.faq p { margin: 10px 0 0; color: var(--muted); }
+.faq a { color: var(--ink); }
+@media (max-width: 760px) {
+  .tasks, .tiles.three { grid-template-columns: minmax(0, 1fr); }
+}
+a.tile { color: inherit; text-decoration: none; }
+a.tile:hover { border-color: var(--yellow); }
+a.tile:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
