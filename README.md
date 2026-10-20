@@ -46,6 +46,11 @@ GoDaddy asks for a Google Authenticator code on every DNS change.
   form: uploads inside iframes are unreliable in some in-app browsers. Form
   ids: families `28356a23a0ead652eed82471efdc04dd` (`wkf.ms/4jfbMWo`),
   workers `63d23540245c74c504f0bca350933242` (`wkf.ms/4dyAI7B`).
+- **Search Console.** `googlef65387e7f06f08e5.html` at the root verifies the
+  URL-prefix property `https://domestica.mx/` (added
+  2026-10-19). **Do not delete or rename it**: Google re-checks it and the
+  property is unverified without it. Sitemap submitted there; update
+  `sitemap.xml` (and its `lastmod`) when a page is added.
 - **Link preview.** `assets/og.png` (1200×630) was rendered from an HTML card
   with headless Chrome (`--headless=new --window-size=1200,630 --screenshot`).
   WhatsApp caches previews per URL; old shares keep the old card.
